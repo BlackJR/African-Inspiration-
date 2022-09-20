@@ -91,9 +91,22 @@
             AFRICAN
           </div>
         </section>
+        <div class="wrapper2">
+          <div class="card-container">
+              <div class="plus-icon"><ion-icon name="add-sharp"></ion-icon></div>
+              <div class="card-icon"><ion-icon name="globe-outline"></ion-icon>
+              </div>
+              <div class="preview-text">AFRICA</div>
+              <div class="card-circle">
+              </div>
+              <div class="text-wrapper">&mdash; AFRICA &mdash; AFRICA &mdash; AFRICA<a href="page2.html"> &mdash; AFRICA</a></div>
+          </div>
+          
+      </div>
         <footer class='df aic jcc'>
           <p>Images from <a href="https://unsplash.com/">Unsplash</a></p>
         </footer>
+        
       </div>
         
     </div>
