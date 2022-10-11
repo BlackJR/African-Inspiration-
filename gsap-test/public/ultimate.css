@@ -62,7 +62,7 @@ body #loader {
   transition: transform 0.6s cubic-bezier(1, 0.885, 0.32, 1);
   transition-delay: 1.25s;
   transform-origin: bottom;
-  background: #fe4e01;
+  background: #e3dcc7;
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -213,11 +213,11 @@ body.loaded::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar {
-  background: #fe4e01;
+  background: #1dad06;
   width: 5px;
 }
 body::-webkit-scrollbar-thumb {
-  background: #fe4e01;
+  background: #05fe01;
 }
 body.active {
   cursor: auto;
@@ -294,7 +294,7 @@ body #close strong.circle {
   top: 0;
 }
 body #close strong.circle span.word span.char:before {
-  color: #fe4e01;
+  color: #e65213;
 }
 body #close strong.circle span.word span.char:nth-of-type(1) {
   transform: rotate(0deg);
@@ -1088,7 +1088,7 @@ body #wrap .panel h2 span.word:before {
   background-position: 50% calc((var(--progress) * 200px) - 150px);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition-delay: 1.25s;
-  -webkit-text-stroke: 2px #fe4e01;
+  -webkit-text-stroke: 2px #000000;
 }
 body #wrap .panel h2 span.word:nth-of-type(3n):before {
   background-position: 50% calc((var(--progress) * -200px) + 25px);
@@ -1194,20 +1194,19 @@ body #wrap .panel .thumb .inner:before, body #wrap .panel .thumb .inner:after {
   height: 100%;
   top: 0;
   left: 0;
-  background: #a58725;
-  mix-blend-mode: lighten;
+  
+  
   opacity: 0.5;
   z-index: 2;
 }
 body #wrap .panel .thumb .inner:after {
-  background: #eeece5;
   opacity: 1;
   z-index: -2;
   mix-blend-mode: normal;
 }
 body #wrap .panel .thumb:hover:before {
   transform: translate(-5%, -5%);
-  box-shadow: 0 0 0 2px #a58725, 0 0 0 6px #eeece5, 0 0 0 8px #fe4e01;
+  box-shadow: 0 0 0 2px #a58725, 0 0 0 6px #eeece5, 0 0 0 8px #000000;
   transition-delay: 0s, 0.2s;
 }
 body #wrap .panel .thumb:before {
@@ -1217,7 +1216,7 @@ body #wrap .panel .thumb:before {
   height: 100%;
   left: 5%;
   top: 5%;
-  box-shadow: 0 0 0 2px #a58725, 0 0 0 0 #eeece5, 0 0 0 0 #fe4e01;
+  box-shadow: 0 0 0 2px #a58725, 0 0 0 0 #eeece5, 0 0 0 0 #20c906;
   transition: transform 0.2s cubic-bezier(1, 0.885, 0.32, 1), box-shadow 0.2s cubic-bezier(1, 0.885, 0.32, 1);
   transition-delay: 0.2s, 0s;
   background: radial-gradient(circle at center, #a58725 1px, rgba(255, 255, 255, 0.005) 1px, rgba(255, 255, 255, 0.005) 20px) 0px 0px/20px 20px, radial-gradient(circle at center, #a58725 1px, rgba(255, 255, 255, 0.005) 1px, rgba(255, 255, 255, 0.005) 20px) 10px 10px/20px 20px;
@@ -1242,22 +1241,10 @@ body #wrap .panel .thumb img {
   position: absolute;
   top: -75%;
   left: 50%;
-  transform: translateY(calc(var(--progress) * 25%)) translateX(-50%);
+ transform: translateY(calc(var(--progress) * 25%)) translateX(-50%);
   width: auto;
   height: 200%;
   z-index: -1;
-  filter: saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(0.5) contrast(4);
+  /* filter: saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(0.5) contrast(4); */
   mix-blend-mode: overlay;
-}
-body #wrap .panel .thumb img.invert {
-  filter: invert(1) saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(0.5) contrast(4);
-}
-body #wrap .panel .thumb img.shift {
-  left: 0;
-}
-body #wrap .panel .thumb img.light {
-  filter: saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(0.75) contrast(4);
-}
-body #wrap .panel .thumb img.lighter {
-  filter: saturate(0) blur(calc(50px - (var(--progress) * 125px))) brightness(1) contrast(4);
 }
