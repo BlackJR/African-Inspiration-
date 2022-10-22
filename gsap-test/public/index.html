@@ -1,100 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CG IMAGE STACK PRE-LOADER ANIMATION</title>
-    <link rel="stylesheet" href="styles5.css" />
-    <link rel="stylesheet" href="./style2.css">
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Scrolling Image Effects -&gt; GSAP &amp; JS</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="./style.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="site-info"><a href="index1.html"> GO</div>
-      <div class="site-menu">
-        <div class="text-wrapper"><a href="index1.html"> GO</a></div>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="scroll loading">
+  <main>
+    <div data-scroll class="page page--layout-2">
+      <h1 class="page__title">#African Inspiration</h1>
+
+      <!--Animated Arrow by @joshgjohnson
+-->
+      <svg class="arrow">
+        <path class="a1" d="M0 0 L30 22 L60 0"></path>
+        <path class="a2" d="M0 20 L30 42 L60 20"></path>
+        <path class="a3" d="M0 40 L30 62 L60 40"></path>
+      </svg>
+
+      <div class="content content--alternate content--padded">
+
+        <div class="content__item content__item--expand" style="--aspect-ratio: 700/525">
+          <div class="content__item-imgwrap">
+            <div class="content__item-img" style="
+									background-image: url(https://imgs.search.brave.com/ZrdHrYdjjSJJbcMzAj6ctTfLf9rVUXAUlW0SJ7CJ8qg/rs:fit:791:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC41/SEpLTjRVcUVKOWpk/bW40b245QU1RSGFF/YyZwaWQ9QXBp?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+								"></div>
+          </div>
+          <h2 class="content__item-title">Thomas Sankara</h2>
+          <p class="content__item-description">
+            Thomas Sankara, souvent appelé le Che Guevara africain, était président du Burkina Faso, l'un des pays les plus pauvres d'Afrique, jusqu'à son assassinat lors du coup d'État militaire qui a renversé son gouvernement. Bien que son mandat ait été relativement court, Sankara a laissé une marque indélébile...
+          </p>
+        </div>
+
+        <div class="content__item content__item--expand" style="--aspect-ratio: 700/460">
+          <div class="content__item-imgwrap">
+            <div class="content__item-img" style="
+									background-image: url(https://1.bp.blogspot.com/_KdcWntyPmeg/TIZlHUqbYiI/AAAAAAAAAxM/KukZ4XlgDo4/s1600/Photo+of+Kwame+Nkrumah.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+								"></div>
+          </div>
+          <h2 class="content__item-title">Kwame Nkurmah</h2>
+          <p class="content__item-description">
+            Kwame Nkurmah, le leader du mouvement de la Gold Coast vers l'indépendance de la Grande-Bretagne dans les années 1940 et 1950, a dirigé la nouvelle nation du Ghana après son indépendance en 1957 jusqu'en 1966, date à laquelle il a été renversé par un coup d'État.
+
+            Extrait de Commanding Heights de Daniel Yergin et Joseph Stanislaw, éd. 1998, pp. 83-88.
+          </p>
+        </div>
+
+        <div class="content__item content__item--expand" style="--aspect-ratio: 600/450">
+          <div class="content__item-imgwrap">
+            <div class="content__item-img" style="
+									background-image: url(https://lequotidien.sn/wp-content/uploads/2016/12/senghor-40-1.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+								"></div>
+          </div>
+          <h2 class="content__item-title">Léopold Sédar Senghor</h2>
+          <p class="content__item-description">
+            Poète, écrivain et homme d'État sénégalais, Léopold Sédar Senghor est né près de Dakar, dans la ville de Joal, d'une mère peule et d'un père commerçant sérère. Il a fait ses études à l'École nationale de la France d'Outre-Mer à Paris, où il s'est lié d'amitié avec Aimé Césaire et le futur président français George Pompidou. Après avoir obtenu sa nationalité française, Senghor a enseigné à Tours et à Paris. Il rejoint l'armée française pendant la Seconde Guerre mondiale et passe 18 mois dans un camp de prisonniers allemand. Après avoir servi des mandats successifs représentant le Sénégal à l'Assemblée nationale française, Senghor est retourné dans son pays natal, où il a dirigé le mouvement d'indépendance de son pays en 1960. Il est finalement devenu le premier président démocratiquement élu du Sénégal, poste qu'il a occupé pendant les vingt années suivantes.
+          </p>
+        </div>
+
+        <div class="content__item content__item--expand" style="--aspect-ratio: 600/500">
+          <div class="content__item-imgwrap">
+            <div class="content__item-img" style="
+									background-image: url(https://perspective.usherbrooke.ca/bilan/contributions/19397a520070430152323917.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+								"></div>
+          </div>
+          <h2 class="content__item-title"> Ahmed Sékou Touré
+          </h2>
+          <p class="content__item-description">
+            Ahmed Sékou Touré était un dirigeant politique guinéen et homme d'État africain qui est devenu le premier président de la Guinée, servant de 1958 jusqu'à sa mort en 1984
+          </p>
+        </div>
+
+
+        <p class="credits">
+          <a href="index1.html" ><i class="fa fa-bullseye"></i> ENTRER <i class="fa fa-bullseye"></i></a>
+        </p>
+
       </div>
     </div>
-    <div class="container">
-     
-      <div class="block b-2"></div>
-      <div class="block b-3"></div>
-      <div class="block b-4"></div>
-      <div class="block b-5"></div>
-      <div class="block b-6"></div>
-      <div class="block b-7"></div> 
-      <div class="block b-1"></div>
-    </div>
-    
-    <div class="overlay"></div>
-    <p class="title">Reach The Fullest</p>
-    <a  class="site-menu" ><a href="index1.html">  GO</a>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script>
-      // Wrap every letter in a span
-      var textWrapper = document.querySelector(".title");
-      textWrapper.innerHTML = textWrapper.textContent.replace(
-        /\S/g,
-        "<span class='letter'>$&</span>"
-      );
+  </main>
 
-      anime.timeline().add({
-        targets: ".title .letter",
-        translateY: [-200, 0],
-        easing: "easeOutExpo",
-        duration: 1400,
-        delay: (el, i) => 6500 + 30 * i,
-      });
+  <button class="scrollToTopBtn">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+      <path d="M403.015,296.471L264.5,108.591c-4.22-5.725-12.778-5.725-16.999,0l-138.515,187.88
+	c-5.14,6.972-0.162,16.826,8.499,16.826h277.03C403.177,313.297,408.155,303.443,403.015,296.471z" />
+      <path d="M413.693,288.598L275.18,100.718c-4.471-6.066-11.641-9.688-19.178-9.688s-14.707,3.621-19.178,9.688
+	L156.992,209h-34.146L256.001,28.39l136.335,184.924c4.348,5.898,12.653,7.154,18.552,2.806c5.898-4.348,7.154-12.655,2.805-18.552
+	L275.18,9.688C270.708,3.621,263.537,0,256.001,0s-14.707,3.621-19.178,9.688L98.308,197.568c-5.365,7.279-6.166,16.813-2.09,24.884
+	c4.077,8.071,12.226,13.083,21.268,13.083h19.943l-39.121,53.063c-5.365,7.279-6.166,16.813-2.09,24.884
+	c4.077,8.071,12.226,13.083,21.268,13.083h45.236V483.23c0,15.864,12.907,28.771,28.771,28.771h129.015
+	c15.864,0,28.771-12.907,28.771-28.771v-88.805c0-15.864-12.907-28.771-28.771-28.771h-78.976c-7.326,0-13.268,5.94-13.268,13.268
+	c0,7.328,5.941,13.268,13.268,13.268h78.976c1.233,0,2.236,1.003,2.236,2.236v88.805c0,1.233-1.003,2.236-2.236,2.236H191.493
+	c-1.233,0-2.236-1.003-2.236-2.236V326.565h205.257c9.042,0,17.191-5.014,21.268-13.083
+	C419.86,305.411,419.059,295.877,413.693,288.598z M122.846,300.03L256.001,119.42l133.154,180.61L122.846,300.03L122.846,300.03z" />
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+      <g>
+      </g>
+    </svg>
+  </button>
 
-      TweenMax.staggerFrom(
-        ".container > .block",
-        2,
-        {
-          y: "110%",
-          ease: Expo.easeInOut,
-          delay: 1,
-        },
-        0.4
-      );
-      TweenMax.to(".overlay", 0.5, {
-        y: "100%",
-        ease: Expo.easeInOut,
-        delay: 5.2,
-      });
+</body>
+<!-- partial -->
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script><script  src="./script.js"></script>
 
-      TweenMax.to(".container", 2, {
-        scale: "2",
-        y: "90%",
-        ease: Expo.easeInOut,
-        delay: 5.5,
-      });
-
-      TweenMax.staggerFrom(
-        ".navbar > div",
-        1.6,
-        {
-          opacity: 0,
-          y: -100,
-          ease: Expo.easeInOut,
-          delay: 6,
-        },
-        0.08
-      );
-      TweenMax.staggerFrom(
-        ".site-menu > div",
-        1,
-        {
-          opacity: 0,
-          y: -100,
-          ease: Power2.easeOut,
-          delay: 6.5,
-        },
-        0.1
-      );
-    </script>
-
-  </body>
+</body>
 </html>
